@@ -1,5 +1,5 @@
 {
-  "name": "database",
+  "name": "@kokkoro/database",
   "version": "1.0.0",
   "description": "Local database for kokkoro.",
   "main": "lib/index.js",
