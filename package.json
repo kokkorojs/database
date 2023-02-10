@@ -1,0 +1,32 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "Local database for kokkoro.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kokkorojs/database.git"
+  },
+  "keywords": [
+    "kokkoro"
+  ],
+  "author": "yuki <mail@yuki.sh>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kokkorojs/database/issues"
+  },
+  "homepage": "https://github.com/kokkorojs/database#readme",
+  "dependencies": {
+    "classic-level": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0"
+  },
+  "files": [
+    "lib"
+  ]
+}
