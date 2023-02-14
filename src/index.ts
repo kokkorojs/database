@@ -8,15 +8,15 @@ interface DatabaseError {
   code: 'LEVEL_NOT_FOUND' | 'LEVEL_DATABASE_NOT_OPEN' | 'LEVEL_DATABASE_NOT_CLOSED';
 }
 
-export class Database extends ClassicLevel {
-  constructor(location: string, options?: DatabaseOptions<string, string>) {
+export class Database<K = string, V = string> extends ClassicLevel<K, V> {
+  constructor(location: string, options?: DatabaseOptions<K, V>) {
     if (__dbname) {
       location = join(__dbname, location);
     }
     super(location, options);
   }
 
-  async has(key: string, callback?: (exists: boolean) => any): Promise<boolean> {
+  async has(key: K, callback?: (exists: boolean) => any): Promise<boolean> {
     let exists: boolean;
 
     try {
